@@ -76,7 +76,9 @@ const home = () => {
                     <div class="container px-5">
                         <div class="row gx-5 align-items-center">
                             <div class="col-lg-5 order-lg-2">
-                                <div class="p-5"><img class="img-fluid" src="assets/img/6.jpg" alt="..." /></div>
+                                <div class="p-5">
+                                    {/* <img class="img-fluid" src="assets/img/6.jpg" alt="..." /> */}
+                                </div>
                             </div>
                             <div class="col-lg-7 order-lg-1">
                                 <div class="p-5">
@@ -103,16 +105,16 @@ const home = () => {
                     <div>English Teacher (Alphington High)</div>
                 </div>
                 <div class="col-3">
-                    <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." style="width: 60px;height: 60px;"/>
+                    {/* <img class="mx-auto rounded-circle" src="assets/img/faq/2.jpg" alt="..." style="width: 60px;height: 60px;"/> */}
                 </div>
             </div>
         </section>
-        {/* Team */}
-        <section class="page-section bg-light" id="team">
+        {/* FAQ */}
+        <section class="page-section bg-light" id="faq">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">FAQ</h2>
-                    <h3 class="section-subheading text-muted"></h3>
+                    <h2 class="text-uppercase">FAQ</h2>
+                    {/* <h3 class="text-muted"></h3> */}
                 </div>
                 
                 <div class="row">
@@ -120,11 +122,10 @@ const home = () => {
                 </div>
             </div>
         </section>
-        {/* FAQ */}
         <div class="faq_section">
             <div class="accordion">
                 <div class="card">
-                  <div class="card-header question-answer" onclick="toggleAnswer(this)">
+                  <div class="card-header question-answer" onclick={toggleAnswer(this)}>
                     <i class="fa fa-plus"></i>
                     <i class="fa fa-minus minus-icon"></i>
                     Question 1
@@ -135,7 +136,7 @@ const home = () => {
                 </div>
     
                 <div class="card">
-                  <div class="card-header question-answer" onclick="toggleAnswer(this)">
+                  <div class="card-header question-answer" onclick={toggleAnswer(this)}>
                     <i class="fa fa-plus"></i>
                     <i class="fa fa-minus minus-icon"></i>
                     Question 2
@@ -146,7 +147,7 @@ const home = () => {
                 </div>
     
                 <div class="card">
-                    <div class="card-header question-answer" onclick="toggleAnswer(this)">
+                    <div class="card-header question-answer" onclick={toggleAnswer(this)}>
                         <i class="fa fa-plus"></i>
                         <i class="fa fa-minus minus-icon"></i>
                         Question 3
@@ -157,7 +158,7 @@ const home = () => {
                 </div>
     
                 <div class="card">
-                    <div class="card-header question-answer" onclick="toggleAnswer(this)">
+                    <div class="card-header question-answer" onclick={toggleAnswer(this)}>
                         <i class="fa fa-plus"></i>
                         <i class="fa fa-minus minus-icon"></i>
                         Question 4
@@ -185,7 +186,9 @@ const home = () => {
                     <div class="col-3">
                         <div class="row">
                             <div class="col">
-                                <a class="navbar-brand" href="#page-top"><img src="assets/img/logo.png" alt="..." style="width: 60px; height: 60px;"/></a>
+                                <a class="navbar-brand" href="#page-top">
+                                    {/* <img src="assets/img/logo.png" alt="..." style="width: 60px; height: 60px;"/> */}
+                                </a>
                             </div>
                             <div class="col-8">
                                 <div><b>MarkMyWords</b></div>
