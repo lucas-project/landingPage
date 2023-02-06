@@ -5,8 +5,8 @@ import navbarItems from "../components/navItem";
 
 const Home = () => {
     const imgStyle = {
-        width: '120px',
-        height: '120px'
+        width: '50px',
+        height: '50px'
     }
     const socialImg = {
         width: '40px',
@@ -95,8 +95,6 @@ const Home = () => {
                             <li class="nav-item">
                                 <Link class="nav-link" to="/contact">Contact</Link>
                             </li>
-                            {/* <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li> */}
                             <button type="button" class="btn btn-outline-primary">login</button>
                         </ul>
                         
