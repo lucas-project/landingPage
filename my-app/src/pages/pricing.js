@@ -1,4 +1,6 @@
 import React, { useState} from "react";
+import { Link } from "react-router-dom";
+
 const Pricing = () => {
     
     return(
@@ -12,9 +14,15 @@ const Pricing = () => {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="./index.html">Features</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                    <li class="nav-item">
+                                <Link class="nav-link" to="/">Features</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="/pricing">Pricing</Link>
+                                </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="/contact">Contact</Link>
+                            </li>
                         <button type="button" class="btn btn-outline-primary">login</button>
                     </ul>
                 </div>
