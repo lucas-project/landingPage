@@ -1,10 +1,5 @@
 import React, { useState} from "react";
 import QuestionList from '../components/faq';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
-// import { faSortAmountDesc } from '@fortawesome/free-solid-svg-icons';
-// import { faLineChart } from '@fortawesome/free-solid-svg-icons';
-// import { faPieChart } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
     const questions = [ 
@@ -84,7 +79,9 @@ const Home = () => {
                     <div className="row text-center">
                         <div className="col-md-3">
                             <span className="fa-stack fa-4x">
-                            {/* <FontAwesomeIcon icon={solid('faList')} /> */}
+                            <img
+                            src={'1.png'}
+                            />
                                 
                             </span>
                             <h4 className="my-3">Improved feedback for students</h4>
@@ -92,24 +89,27 @@ const Home = () => {
                         </div>
                         <div className="col-md-3">
                             <span className="fa-stack fa-4x">
-                            {/* <FontAwesomeIcon icon={faSortAmountDesc} /> */}
-                                
+                            <img
+                            src={'2.png'}
+                            />
                             </span>
                             <h4 className="my-3">Reduced workload for teachers</h4>
                             <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         </div>
                         <div className="col-md-3">
                             <span className="fa-stack fa-4x">
-                            {/* <FontAwesomeIcon icon={faPieChart} /> */}
-                                
+                            <img
+                            src={'3.png'}
+                            />
                             </span>
                             <h4 className="my-3">Data-driven insights</h4>
                             <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         </div>
                         <div className="col-md-3">
                             <span className="fa-stack fa-4x">
-                            {/* <FontAwesomeIcon icon={faLineChart} /> */}
-                                
+                            <img
+                            src={'4.png'}
+                            />
                             </span>
                             <h4 className="my-3">Enhance student outcomes</h4>
                             <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
@@ -129,7 +129,6 @@ const Home = () => {
                             <div key={index} className="feature-item">
                                 <div
                                 className="feature-header"
-                                //onClick={() => setSelectedFeature(index)}
                                 onClick={() => handleFeatureClick(index)}
                                 >
                                 <p>{feature.feature}</p>
