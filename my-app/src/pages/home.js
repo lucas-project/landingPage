@@ -2,6 +2,14 @@ import React, { useState} from "react";
 import QuestionList from '../components/faq';
 
 const Home = () => {
+    const imgStyle = {
+        width: '120px',
+        height: '120px'
+    }
+    const socialImg = {
+        width: '40px',
+        height: '40px'
+    }
     const questions = [ 
         { 
             question: 'What is ReactJS?', 
@@ -48,7 +56,7 @@ const Home = () => {
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
                 <div class="container">
-                    <a class="navbar-brand" href="#page-top"><img src="logo.png" alt="..." /></a>
+                    <a class="navbar-brand" href="#page-top"><img src="logo.png" alt="..." style={imgStyle}/></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         Menu
                         <i class="fas fa-bars ms-1"></i>
@@ -169,12 +177,14 @@ const Home = () => {
                 <div className="row">
                     <div className="col-6"></div>
                     <div className="col-3">
-                        <div><b>James Smith</b></div>
-                        <div>English Teacher (Alphington High)</div>
+                    
+                        <img className="mx-auto rounded-circle" src="3.jpg" alt="..." style={imgStyle}/>
+                        <br/>
+                    
+                        <div><b>&nbsp;James Smith</b></div>
+                        <div>&nbsp;English Teacher (Alphington High)</div>
                     </div>
-                    <div className="col-3">
-                        {/* <img className="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." style="width: 60px;height: 60px;"/> */}
-                    </div>
+                   
                 </div>
             </div>
             
@@ -197,8 +207,8 @@ const Home = () => {
                         <div className="col-3">
                             <div className="row">
                                 <div className="col">
-                                    {/* <a className="navbar-brand" href="#page-top">
-                                        <img src="assets/img/logo.png" alt="..." style="width: 60px; height: 60px;"/></a> */}
+                                    <a className="navbar-brand" href="#page-top">
+                                        <img src="logo.png" alt="..." style={imgStyle}/></a>
                                 </div>
                                 <div className="col-8">
                                     <div><b>MarkMyWords</b></div>
@@ -210,6 +220,10 @@ const Home = () => {
                                 <a className="btn btn-dark btn-social mx-2" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
                                 <a className="btn btn-dark btn-social mx-2" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
                                 <a className="btn btn-dark btn-social mx-2" aria-label="Instagram"><i className="fab fa-instagram"></i></a> */}
+                                <a className="btn btn-social mx-2"><img src='fb.png' alt='social media logos' style={socialImg}/></a>
+                                <a className="btn btn-social mx-2"><img src='ins.png' alt='social media logos' style={socialImg}/></a>
+                                <a className="btn btn-social mx-2"><img src='twt.png' alt='social media logos' style={socialImg}/></a>
+                                <a className="btn btn-social mx-2"><img src='you.png' alt='social media logos' style={socialImg}/></a>
                             </div>
                             <br/>
                             <div className="row">
