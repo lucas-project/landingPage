@@ -11816,6 +11816,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   width: 50%;
   height: auto;
 }
+.features-images img {
+  max-width: 500px;
+  max-height: 500px;
+}
 
 .feature-item {
   margin: 20px 0;

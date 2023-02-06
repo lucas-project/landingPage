@@ -1,7 +1,12 @@
 import React, { useState} from "react";
 import QuestionList from '../components/faq';
-import image1 from '../img/feature1-1.png';
-const Features = () => {
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+// import { faSortAmountDesc } from '@fortawesome/free-solid-svg-icons';
+// import { faLineChart } from '@fortawesome/free-solid-svg-icons';
+// import { faPieChart } from '@fortawesome/free-solid-svg-icons';
+
+const Home = () => {
     const questions = [ 
         { 
             question: 'What is ReactJS?', 
@@ -19,8 +24,7 @@ const Features = () => {
     const features = [        { 
         feature: 'What is feature 1?', 
         detail: 'ReactJS is a JavaScript library for building user interfaces.',
-        images: ['../img/feature1-1.png','../img/feature1-1.png'],
-        
+        images: ['feature1-1.png','feature1-2.png'],
     }, 
     { 
         feature: 'What is a React component?', 
@@ -49,7 +53,7 @@ const Features = () => {
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
                 <div class="container">
-                    <a class="navbar-brand" href="#page-top"><img src="assets/img/logo.png" alt="..." /></a>
+                    <a class="navbar-brand" href="#page-top"><img src="logo.png" alt="..." /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         Menu
                         <i class="fas fa-bars ms-1"></i>
@@ -80,7 +84,7 @@ const Features = () => {
                     <div className="row text-center">
                         <div className="col-md-3">
                             <span className="fa-stack fa-4x">
-                                <i className="fas fa-list fa-stack-2x text-primary"></i>
+                            {/* <FontAwesomeIcon icon={solid('faList')} /> */}
                                 
                             </span>
                             <h4 className="my-3">Improved feedback for students</h4>
@@ -88,7 +92,7 @@ const Features = () => {
                         </div>
                         <div className="col-md-3">
                             <span className="fa-stack fa-4x">
-                                <i className="fas fa-sort-amount-desc  fa-stack-2x text-primary"></i>
+                            {/* <FontAwesomeIcon icon={faSortAmountDesc} /> */}
                                 
                             </span>
                             <h4 className="my-3">Reduced workload for teachers</h4>
@@ -96,7 +100,7 @@ const Features = () => {
                         </div>
                         <div className="col-md-3">
                             <span className="fa-stack fa-4x">
-                                <i className="fas fa-pie-chart fa-stack-2x text-primary"></i>
+                            {/* <FontAwesomeIcon icon={faPieChart} /> */}
                                 
                             </span>
                             <h4 className="my-3">Data-driven insights</h4>
@@ -104,7 +108,7 @@ const Features = () => {
                         </div>
                         <div className="col-md-3">
                             <span className="fa-stack fa-4x">
-                                <i className="fas fa-line-chart fa-stack-2x text-primary"></i>
+                            {/* <FontAwesomeIcon icon={faLineChart} /> */}
                                 
                             </span>
                             <h4 className="my-3">Enhance student outcomes</h4>
@@ -144,7 +148,7 @@ const Features = () => {
                         {selectedFeature !== -1 && (
                         <>
                             <img
-                            src={features[selectedFeature].images[currentImageIndex].image}
+                            src={features[selectedFeature].images[currentImageIndex]}
                             alt={features[selectedFeature].feature}
                             />
                             <div className="arrows">
@@ -153,26 +157,6 @@ const Features = () => {
                             </div>
                         </>
                         )}
-                            {/* {features.map((feature, index) => (
-                                <React.Fragment key={index}>
-                                <img
-                                  src={feature.image1}
-                                  className={selectedFeature === index ? 'show' : 'hide'}
-                                  alt={feature.feature + ' Image 1'}
-                                />
-                                <img
-                                  src={feature.image2}
-                                  className={selectedFeature === index ? 'show' : 'hide'}
-                                  alt={feature.feature + ' Image 2'}
-                                />
-                              </React.Fragment>
-                            // <img
-                            //     key={index}
-                            //     src={feature.image}
-                            //     className={selectedFeature === index ? 'show' : 'hide'}
-                            //     alt={feature.feature}
-                            // />
-                            ))} */}
                         </div>
                     </div>
                 </div>
@@ -207,7 +191,7 @@ const Features = () => {
                 </div>
                 <QuestionList questions={questions} />
             </div>
-            
+            {/* footer */}
             <div className="bg-light">
                 <div className="container">
                     <div className="row">
@@ -263,4 +247,4 @@ const Features = () => {
     );
 };
 
-export default Features;
+export default Home;
