@@ -93,7 +93,7 @@ const Contact = () => {
                     </div>
 
                 </div>
-                <br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/>
 
                 <div>
                     <div className="row" style={divStyle_2}>
@@ -143,6 +143,7 @@ const Contact = () => {
 
                     </div>
                 </div>
+                <br/><br/><br/><br/><br/><br/>
                     
             
                 <div className="bg-light">
@@ -161,10 +162,10 @@ const Contact = () => {
                                 </div>
                                 <br/>
                                 <div className="row">
-                                    <a className="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
-                                    <a className="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-                                    <a className="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
-                                    <a className="btn btn-dark btn-social mx-2" href="#!" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+                                <a className="btn btn-social mx-2"><img src='fb.png' alt='social media logos' style={socialImg}/></a>
+                                <a className="btn btn-social mx-2"><img src='ins.png' alt='social media logos' style={socialImg}/></a>
+                                <a className="btn btn-social mx-2"><img src='twt.png' alt='social media logos' style={socialImg}/></a>
+                                <a className="btn btn-social mx-2"><img src='you.png' alt='social media logos' style={socialImg}/></a>
                                 </div>
                                 <br/>
                                 <div className="row">

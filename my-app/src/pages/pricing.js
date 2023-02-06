@@ -1,5 +1,7 @@
 import React, { useState} from "react";
 import { Link } from "react-router-dom";
+import PriceTable from "../components/priceTable";
+
 
 const Pricing = () => {
     const imgStyle = {
@@ -48,6 +50,7 @@ const Pricing = () => {
         
         margin: '5%'
     }
+
     
     return(
         <div>
@@ -75,6 +78,10 @@ const Pricing = () => {
                     </div>
                 </div>
             </nav>
+            <br/>
+            
+            <PriceTable />
+            
      
             <div className="bg-light">
                 <div className="container">
@@ -120,13 +127,18 @@ const Pricing = () => {
                             <div>office@markmywords.com</div>
                             <div>25 Tree st, Richmond, VIC 3121, Australia</div>
                         </div>
+                        
                         <div className="col">
         
                         </div>
                     </div>
                     </div>
                     
-            </div>          
+            </div>     
+            <div>
+                
+            </div>  
+             
         </div>
     )
 
