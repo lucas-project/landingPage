@@ -1,5 +1,7 @@
 import React, { useState} from "react";
 import QuestionList from '../components/faq';
+import { Link } from "react-router-dom";
+import navbarItems from "../components/navItem";
 
 const Home = () => {
     const imgStyle = {
@@ -63,11 +65,20 @@ const Home = () => {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="./index.html">Features</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="/">Features</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="/pricing">Pricing</Link>
+                                </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="/contact">Contact</Link>
+                            </li>
+                            {/* <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li> */}
                             <button type="button" class="btn btn-outline-primary">login</button>
                         </ul>
+                        
                     </div>
                 </div>
             </nav>
@@ -216,10 +227,6 @@ const Home = () => {
                             </div>
                             <br/>
                             <div className="row">
-                                {/* <a className="btn btn-dark btn-social mx-2" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
-                                <a className="btn btn-dark btn-social mx-2" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-                                <a className="btn btn-dark btn-social mx-2" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
-                                <a className="btn btn-dark btn-social mx-2" aria-label="Instagram"><i className="fab fa-instagram"></i></a> */}
                                 <a className="btn btn-social mx-2"><img src='fb.png' alt='social media logos' style={socialImg}/></a>
                                 <a className="btn btn-social mx-2"><img src='ins.png' alt='social media logos' style={socialImg}/></a>
                                 <a className="btn btn-social mx-2"><img src='twt.png' alt='social media logos' style={socialImg}/></a>

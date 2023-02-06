@@ -1,5 +1,6 @@
 import React, { useState} from "react";
-const Pricing = () => {
+import { Link } from 'react-router-dom';
+const Contact = () => {
     
     return(
         <div>
@@ -77,4 +78,4 @@ const Pricing = () => {
 
 };
 
-export default Pricing;
+export default Contact;
