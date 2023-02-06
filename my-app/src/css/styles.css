@@ -11800,42 +11800,52 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin: 20px 0;
   border-bottom: 1px solid #ccc;
   padding: 20px;
+  font-weight: bold;
 }
 .question-list {
   text-align: left;
+  padding-left: 30px;
 }
 .features-container {
   display: flex;
+  height: 500px;
 }
 
 .features-list {
   width: 50%;
+  padding-right: 5%;
   text-align: left;
 }
 .features-images {
   width: 50%;
+  padding: 0 5%;
   height: auto;
 }
 .features-images img {
-  max-width: 500px;
-  max-height: 500px;
+  width: 100%;
+  height: 80%;
 }
 
 .feature-item {
-  margin: 20px 0;
-  padding: 20px;
+  padding-top: 10px;
+}
+.feature-header p {
+  margin-bottom: 0;
 }
 
 .feature-header {
-  /* background-color: #f2f2f2; */
   cursor: pointer;
   padding-left: 20px;
   font-size: 22px;
   margin-bottom: 5px;
 }
+.feature-header p {
+  margin-bottom: 0;
+  color: #066173;
+  font-weight: bold;
+}
 
 .feature-detail {
-  /* background-color: #e9e9e9; */
   padding-left: 20px;
   display: none;
 }
@@ -11843,5 +11853,19 @@ section#contact form#contactForm :-ms-input-placeholder {
 .show {
   display: block;
 }
+.features-images-container {
+  position: relative;
+}
+.features-images-container img {
+  margin-bottom: 40px;
+}
 
+
+.arrows {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 

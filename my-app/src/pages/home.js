@@ -27,18 +27,39 @@ const Home = () => {
         } 
     ];
     const features = [        { 
-        feature: 'What is feature 1?', 
-        detail: 'ReactJS is a JavaScript library for building user interfaces.',
-        images: ['feature1-1.png','feature1-2.png'],
+        feature: 'Quick, easy assessment', 
+        detail: 'Mark My Words makes it easy to assess your students\' progress with our simple, consistent assessment system. Just fill out the form and let our software do the rest.',
+        images: ['feature1-1.jpg','7.png'],
     }, 
     { 
-        feature: 'What is a React component?', 
-        detail: 'A React component is a piece of UI that can be reused and combined to build a complete user interface.' 
+        feature: 'Student Success Dashboard', 
+        detail: 'With Mark My Words, your students can access a personalised dashboard that tracks their progress and provides targeted feedback. They can interact with the dashboard to learn more and see detailed breakdowns and examples of key skills. It\'s an engaging way to help them succeed.' ,
+        images: ['feature1-1.jpg','7.png'],
     }, 
     { 
-        feature: 'What is the Virtual DOM?', 
-        detail: 'The Virtual DOM is a lightweight in-memory representation of the actual DOM in a React application.' 
-    } ]
+        feature: 'Comprehensive Assessment Matrix', 
+        detail: 'Our assessment matrix offers a birds-eye view of each students\' performance, allowing them (and you) to compare skills and identify areas for improvement. Criterion-referenced and easy to understand, it\'s a valuable tool that will help each student achieve their potential.' ,
+        images: ['feature1-1.jpg','7.png'],
+    },
+    {
+        feature: 'Customisable Feedback Sets', 
+        detail: 'Create your own feedback sets, so you can tailor your feedback to your students\' needs and provide personalised guidance that truly makes a difference. With our intuitive interface, it\'s never been easier to create feedback sets that are tailored to the task and the students\' specific learning goals.' ,
+        images: ['feature1-1.jpg','7.png'],
+        
+    },
+    {
+        feature: 'Share and Learn with Feedback Sets', 
+        detail: 'Share and Learn with Feedback Sets" Explanation: "You can access feedback sets created by other teachers, share your own feedback sets with the community, and benefit from the collective wisdom of the teaching profession. It\'s a great way to improve your feedback practice and help your students succeed.',
+        images: ['feature1-1.jpg','7.png'],
+        
+    },
+    {
+        feature: 'Teacher Dashboard: Your Personal Data Assistant', 
+        detail: 'We provide a comprehensive teacher dashboard that helps you stay on top of your students\' progress and guide your teaching practice. Easily track individual student and class performance, identify strengths and weaknesses, and receive targeted recommendations for improvement. It\'s like having your own personal data-driven assistant, right at your fingertips.' ,
+        images: ['feature1-1.jpg','7.png'],
+        
+    }   
+    ]
     const [selectedFeature, setSelectedFeature] = useState(-1);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const handleFeatureClick = (index) => {
@@ -164,7 +185,7 @@ const Home = () => {
                         </div>
                         <div className="features-images">
                         {selectedFeature !== -1 && (
-                        <>
+                        <div className="features-images-container">
                             <img
                             src={features[selectedFeature].images[currentImageIndex]}
                             alt={features[selectedFeature].feature}
@@ -173,7 +194,7 @@ const Home = () => {
                             <button onClick={handlePrevImage}>&larr;</button>
                             <button onClick={handleNextImage}>&rarr;</button>
                             </div>
-                        </>
+                        </div>
                         )}
                         </div>
                     </div>
