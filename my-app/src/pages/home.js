@@ -1,13 +1,9 @@
 import React, { useState} from "react";
 import QuestionList from '../components/faq';
-import { Link } from "react-router-dom";
-import navbarItems from "../components/navItem";
+import NavBar from "../components/navBar";
+import Footer from "../components/footer";
 
 const Home = () => {
-    // const imgStyle = {
-    //     width: '50px',
-    //     height: '50px'
-    // }
     const socialImg = {
         width: '40px',
         height: '40px'
@@ -77,30 +73,7 @@ const Home = () => {
       
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-                <div class="container">
-                    <img className="navImgStyle" src="logo.png" alt="..."/>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        Menu
-                        <i class="fas fa-bars ms-1"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                            <li class="nav-item">
-                                <Link class="nav-link" to="/">Features</Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link class="nav-link" to="/pricing">Pricing</Link>
-                                </li>
-                            <li class="nav-item">
-                                <Link class="nav-link" to="/contact">Contact</Link>
-                            </li>
-                            <button type="button" class="btn btn-outline-primary">login</button>
-                        </ul>
-                        
-                    </div>
-                </div>
-            </nav>
+            <NavBar/>
             <header class="masthead">
                 <div class="container">
                     <div class="masthead-heading text-uppercase">Say Goodbye to Excessive Workloads and Hello to Improved Student Outcome</div>
@@ -117,9 +90,7 @@ const Home = () => {
                     <div className="row text-center">
                         <div className="col-md-3 sidePadding">
                             <span className="fa-stack fa-4x">
-                            <img
-                            src={'1.png'}
-                            />
+                            <img src={'1.png'} />
                                 
                             </span>
                             <h4 className="my-3">Improved feedback for students</h4>
@@ -127,27 +98,21 @@ const Home = () => {
                         </div>
                         <div className="col-md-3 sidePadding">
                             <span className="fa-stack fa-4x">
-                            <img
-                            src={'2.png'}
-                            />
+                            <img src={'2.png'} />
                             </span>
                             <h4 className="my-3">Reduced workload for teachers</h4>
                             <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         </div>
                         <div className="col-md-3 sidePadding">
                             <span className="fa-stack fa-4x">
-                            <img
-                            src={'3.png'}
-                            />
+                            <img src={'3.png'} />
                             </span>
                             <h4 className="my-3">Data-driven insights</h4>
                             <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         </div>
                         <div className="col-md-3 sidePadding">
                             <span className="fa-stack fa-4x">
-                            <img
-                            src={'4.png'}
-                            />
+                            <img src={'4.png'} />
                             </span>
                             <h4 className="my-3">Enhance student outcomes</h4>
                             <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
@@ -225,48 +190,7 @@ const Home = () => {
                 </div>
                 <QuestionList questions={questions} />
             </div>
-            {/* footer */}
-            <div className="bg-light footer">
-                
-                <div className="container sideMarginLarge">
-                    <div className="row sideMargin">
-                        <div className="col-4 allPadding">
-                            <div className="row">
-                                <div className="col verMargin">
-                                    <img src="logo.png" alt="..." className="footerImgStyle"/>
-                                </div>
-                                <div className="col verMargin alignCenter">
-                                    <b>MarkMyWords</b>
-                                </div>
-                            </div>
-                            <div className="row verMargin spaceAroundFlex">
-                                <a className="btn btn-social mx-2"><img src='fb.png' alt='social media logos' style={socialImg}/></a>
-                                <a className="btn btn-social mx-2"><img src='ins.png' alt='social media logos' style={socialImg}/></a>
-                                <a className="btn btn-social mx-2"><img src='twt.png' alt='social media logos' style={socialImg}/></a>
-                                <a className="btn btn-social mx-2"><img src='you.png' alt='social media logos' style={socialImg}/></a>
-                            </div>
-                            <br/>
-                            <div className="row verMargin">
-                                <div className="text-sm-start">Copyright &copy; MarkMyWords 2023</div>
-                            </div>
-                        </div>
-                        <div className="col-4 allPadding ">
-                            <p><b>Pages</b></p>
-                            <p>Features</p>
-                            <p>Pricing</p>
-                            <p>Contact</p>
-                        </div>
-                        <div className="col-4 allPadding">
-                            <p><b>Contact</b></p>
-                            <p><span><i className="fas fa-stack-2x text-primary"></i></span>(61) 555-5555</p>
-                            <p>office@markmywords.com</p>
-                            <p>25 Tree st, Richmond, VIC 3121, Australia</p>
-                        </div>
-
-                    </div>
-                </div>
-                    
-            </div>        
+            <Footer/>
         </div>
     );
 };
