@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 
 const Contact = () => {
-    const imgStyle = {
-        width: '120px',
-        height: '120px'
-    }
+    // const imgStyle = {
+    //     width: '120px',
+    //     height: '120px'
+    // }
     const socialImg = {
         width: '40px',
         height: '40px'
@@ -50,32 +50,31 @@ const Contact = () => {
         margin: '5%'
     }
     return(
-        <div>
+        <>
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-                    <div class="container">
-                        <a class="navbar-brand" href="#page-top"><img src="logo.png" alt="..." style={imgStyle}/></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                            Menu
-                            <i class="fas fa-bars ms-1"></i>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarResponsive">
-                            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                                <li class="nav-item">
-                                    <Link class="nav-link" to="/">Features</Link>
+                <div class="container">
+                    <a class="navbar-brand" href="#page-top"><img src="logo.png" alt="..." className="navImgStyle"/></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+                        <i class="fas fa-bars ms-1"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                            <li class="nav-item">
+                                <Link class="nav-link" to="/">Features</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="/pricing">Pricing</Link>
                                 </li>
-                                <li class="nav-item">
-                                    <Link class="nav-link" to="/pricing">Pricing</Link>
-                                    </li>
-                                <li class="nav-item">
-                                    <Link class="nav-link" to="/contact">Contact</Link>
-                                </li>
-                                <button type="button" class="btn btn-outline-primary">login</button>
-                            </ul>
-                            
-                        </div>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="/contact">Contact</Link>
+                            </li>
+                            <button type="button" class="btn btn-outline-primary">login</button>
+                        </ul>
+                        
                     </div>
-                </nav>
-            <br /><br />
+                </div>
+            </nav>
         
             <div style={divStyle_6}>
                 <div className="bg-light" style = {divStyle_5}>
@@ -93,7 +92,6 @@ const Contact = () => {
                     </div>
 
                 </div>
-                <br/><br/><br/><br/><br/><br/>
 
                 <div>
                     <div className="row" style={divStyle_2}>
@@ -103,7 +101,6 @@ const Contact = () => {
                             <div>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiuod tempor incidiunt.
                             </div>
-                                <br/><br/><br/><br/>
                             <form>
                                 <div className="row">
                                     <input type="text" className="form-control" placeholder="Your name" />
@@ -143,7 +140,6 @@ const Contact = () => {
 
                     </div>
                 </div>
-                <br/><br/><br/><br/><br/><br/>
                     
             
                 <div className="bg-light">
@@ -184,7 +180,6 @@ const Contact = () => {
             
                             </div>
                             <div className="col">
-                                <br/><br/><br/>
                                 
                                 <div><b>Contact</b></div>
                                 <div><span><i className="fas fa-stack-2x text-primary"></i></span>(61) 555-5555</div>
@@ -198,7 +193,7 @@ const Contact = () => {
                         </div>
                     </div>           
                 </div>
-        </div>
+        </>
     )
 
 };

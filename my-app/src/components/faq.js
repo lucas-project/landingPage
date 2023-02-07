@@ -6,7 +6,7 @@ function Question({ question, answer }) {
   return (
     <div>
       <p onClick={() => setExpanded(!isExpanded)}   className='question'>
-        {isExpanded ? '-' : '+'} {question}
+      {question}{isExpanded ? <img className="expandLogoStyle" src="minimize.png" alt="minimize"/>  : <img className="expandLogoStyle" src="add-button.png" alt="expand"/>} 
       </p >
       {isExpanded && <p  className='question-list'>{answer}
       </p >}
@@ -17,7 +17,7 @@ function Question({ question, answer }) {
 
 function QuestionList({ questions }) {
   return (
-    <div className='container'>
+    <div className='container sideMargin'>
       {questions.map((question, index) => (
         <Question key={index} question={question.question} answer={question.answer} />
       ))}

@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import navbarItems from "../components/navItem";
 
 const Home = () => {
-    const imgStyle = {
-        width: '50px',
-        height: '50px'
-    }
+    // const imgStyle = {
+    //     width: '50px',
+    //     height: '50px'
+    // }
     const socialImg = {
         width: '40px',
         height: '40px'
@@ -79,7 +79,7 @@ const Home = () => {
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
                 <div class="container">
-                    <a class="navbar-brand" href="#page-top"><img src="logo.png" alt="..." style={imgStyle}/></a>
+                    <img className="navImgStyle" src="logo.png" alt="..."/>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         Menu
                         <i class="fas fa-bars ms-1"></i>
@@ -115,7 +115,7 @@ const Home = () => {
                         <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.</h3>
                     </div>
                     <div className="row text-center">
-                        <div className="col-md-3">
+                        <div className="col-md-3 sidePadding">
                             <span className="fa-stack fa-4x">
                             <img
                             src={'1.png'}
@@ -125,7 +125,7 @@ const Home = () => {
                             <h4 className="my-3">Improved feedback for students</h4>
                             <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-md-3 sidePadding">
                             <span className="fa-stack fa-4x">
                             <img
                             src={'2.png'}
@@ -134,7 +134,7 @@ const Home = () => {
                             <h4 className="my-3">Reduced workload for teachers</h4>
                             <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-md-3 sidePadding">
                             <span className="fa-stack fa-4x">
                             <img
                             src={'3.png'}
@@ -143,7 +143,7 @@ const Home = () => {
                             <h4 className="my-3">Data-driven insights</h4>
                             <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-md-3 sidePadding">
                             <span className="fa-stack fa-4x">
                             <img
                             src={'4.png'}
@@ -159,7 +159,7 @@ const Home = () => {
                 <div className="container">
                     <div className="text-center">
                         <h2 className="section-heading text-uppercase">Spreadsheets and post-it notes</h2>
-                        <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.</h3>
+                        <h3 className="section-subheading text-muted sideMarginLarge">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.</h3>
                     </div>
                     <div className="features-container">
                         <div className="features-list">
@@ -199,23 +199,18 @@ const Home = () => {
                 </div>
             </div>       
             <div className="page-section" id="about">
-                <div className="container">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiuod tempor incidiunt."  
+                <div className="row aboutContent">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiuod tempor incidiunt.""Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiuod tempor incidiunt.""Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiuod tempor incidiunt.""Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiuod tempor incidiunt.""Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiuod tempor incidiunt."</p>  
                 </div>
-                <br/><br/>
-                
-                <div className="row">
-                    <div className="col-6"></div>
-                    <div className="col-3">
-                    
-                        <img className="mx-auto rounded-circle" src="3.jpg" alt="..." style={imgStyle}/>
-                        <br/>
-                    
-                        <div><b>&nbsp;James Smith</b></div>
-                        <div>&nbsp;English Teacher (Alphington High)</div>
+                <div className="row aboutContent">
+                    <div className="col-9 aboutAuthor">
+                        <p><b>&nbsp;James Smith</b></p>
+                        <p>&nbsp;English Teacher (Alphington High)</p>
                     </div>
-                   
-                </div>
+                    <div className="col-3 aboutAuthorImg">
+                        <img className="mx-auto rounded-circle aboutImgStyle" src="3.jpg" alt="..." />
+                    </div>                   
+                </div>  
             </div>
             
             <div className="page-section bg-light" id="faq">
@@ -224,62 +219,52 @@ const Home = () => {
                         <h2 className="section-heading text-uppercase">FAQ</h2>
                     </div>
                     
-                    <div className="row">
-                        <div className="col-lg-8 mx-auto text-center"><p className="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                    <div className="row sideMarginLarge">
+                        <div className="text-center"><p className="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
                     </div>
                 </div>
                 <QuestionList questions={questions} />
             </div>
             {/* footer */}
-            <div className="bg-light">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-3">
+            <div className="bg-light footer">
+                
+                <div className="container sideMarginLarge">
+                    <div className="row sideMargin">
+                        <div className="col-4 allPadding">
                             <div className="row">
-                                <div className="col">
-                                    <a className="navbar-brand" href="#page-top">
-                                        <img src="logo.png" alt="..." style={imgStyle}/></a>
+                                <div className="col verMargin">
+                                    <img src="logo.png" alt="..." className="footerImgStyle"/>
                                 </div>
-                                <div className="col-8">
-                                    <div><b>MarkMyWords</b></div>
+                                <div className="col verMargin alignCenter">
+                                    <b>MarkMyWords</b>
                                 </div>
                             </div>
-                            <br/>
-                            <div className="row">
+                            <div className="row verMargin spaceAroundFlex">
                                 <a className="btn btn-social mx-2"><img src='fb.png' alt='social media logos' style={socialImg}/></a>
                                 <a className="btn btn-social mx-2"><img src='ins.png' alt='social media logos' style={socialImg}/></a>
                                 <a className="btn btn-social mx-2"><img src='twt.png' alt='social media logos' style={socialImg}/></a>
                                 <a className="btn btn-social mx-2"><img src='you.png' alt='social media logos' style={socialImg}/></a>
                             </div>
                             <br/>
-                            <div className="row">
+                            <div className="row verMargin">
                                 <div className="text-sm-start">Copyright &copy; MarkMyWords 2023</div>
                             </div>
                         </div>
-                        <div className="col"></div>
-                        <div className="col">
-                            <br/><br/><br/>
-                            <div><b>Pages</b></div>
-                            <div>Features</div>
-                            <div>Pricing</div>
-                            <div>Contact</div>
+                        <div className="col-4 allPadding ">
+                            <p><b>Pages</b></p>
+                            <p>Features</p>
+                            <p>Pricing</p>
+                            <p>Contact</p>
                         </div>
-                        <div className="col">
-        
+                        <div className="col-4 allPadding">
+                            <p><b>Contact</b></p>
+                            <p><span><i className="fas fa-stack-2x text-primary"></i></span>(61) 555-5555</p>
+                            <p>office@markmywords.com</p>
+                            <p>25 Tree st, Richmond, VIC 3121, Australia</p>
                         </div>
-                        <div className="col">
-                            <br/><br/><br/>
-                            
-                            <div><b>Contact</b></div>
-                            <div><span><i className="fas fa-stack-2x text-primary"></i></span>(61) 555-5555</div>
-                            <div>office@markmywords.com</div>
-                            <div>25 Tree st, Richmond, VIC 3121, Australia</div>
-                        </div>
-                        <div className="col">
-        
-                        </div>
+
                     </div>
-                    </div>
+                </div>
                     
             </div>        
         </div>

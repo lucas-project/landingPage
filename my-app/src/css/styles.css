@@ -667,7 +667,7 @@ progress {
   }
 }
 .row {
-  --bs-gutter-x: 1.5rem;
+  /* --bs-gutter-x: 1.5rem; */
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -680,7 +680,7 @@ progress {
   width: 100%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  /* padding-left: calc(var(--bs-gutter-x) * 0.5); */
   margin-top: var(--bs-gutter-y);
 }
 
@@ -11301,7 +11301,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 6rem 6rem;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
@@ -11336,6 +11336,20 @@ p {
   justify-content: center;
   padding: 0;
   border-radius: 100%;
+}
+
+.navImgStyle {
+  width: 50px;
+  height: auto;
+}
+
+.aboutImgStyle {
+  width: 120px;
+  height: auto;
+}
+.footerImgStyle {
+  width: 100px;
+  height: auto;
 }
 
 #mainNav {
@@ -11449,90 +11463,6 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
-/* #features .features-item {
-  max-width: 26rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-#features .features-item .features-link {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-}
-#features .features-item .features-link .features-hover {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 200, 0, 0.9);
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity ease-in-out 0.25s;
-} */
-/* #features .features-item .features-link .features-hover .features-hover-content {
-  font-size: 1.25rem;
-  color: white;
-} */
-/* #features .features-item .features-link:hover .features-hover {
-  opacity: 1;
-} */
-/* #features .features-item .features-caption {
-  padding: 1.5rem;
-  text-align: center;
-  background-color: #fff;
-}
-#features .features-item .features-caption .features-caption-heading {
-  font-size: 1.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  margin-bottom: 0;
-} */
-/* #features .features-item .features-caption .features-caption-subheading {
-  font-style: italic;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-} */
-
-/* .features-modal .modal-dialog {
-  margin: 1rem;
-  max-width: 100vw;
-}
-.features-modal .modal-content {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  text-align: center;
-}
-.features-modal .modal-content h2, .features-modal .modal-content .h2 {
-  font-size: 3rem;
-  line-height: 3rem;
-} */
-/* .features-modal .modal-content p.item-intro {
-  font-style: italic;
-  margin-bottom: 2rem;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.features-modal .modal-content p {
-  margin-bottom: 2rem;
-}
-.features-modal .modal-content ul.list-inline {
-  margin-bottom: 2rem;
-} */
-/* .features-modal .modal-content img {
-  margin-bottom: 2rem;
-}
-.features-modal .close-modal {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
-  background-color: transparent;
-} */
-/* .features-modal .close-modal:hover {
-  opacity: 0.3;
-} */
-
 .timeline {
   position: relative;
   padding: 0;
@@ -11801,6 +11731,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   border-bottom: 1px solid #ccc;
   padding: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 .question-list {
   text-align: left;
@@ -11869,3 +11800,54 @@ section#contact form#contactForm :-ms-input-placeholder {
   width: 100%;
 }
 
+.aboutContent {
+  text-align: center;
+  /* padding-bottom: 2rem; */
+  margin: 2rem 8rem;
+}
+
+.aboutAuthor {
+  text-align: right;
+  padding: 10px;
+}
+.aboutAuthorImg {
+  text-align: left;
+  padding: 10px;
+}
+
+#about {
+  padding: 6rem;
+}
+
+.sideMargin {
+  margin: 0 2rem;
+}
+.sidePadding {
+  padding: 0 2rem;
+}
+.sideMarginLarge {
+  margin: 0 6rem;
+}
+.expandLogoStyle {
+  float: right;
+  height: auto;
+  width: 20px;
+}
+.verMargin {
+  margin: 1rem 0;
+}
+.alignCenter {
+  display: flex;
+  align-items: center;
+}
+.spaceAroundFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.allPadding {
+  padding: 2rem;
+}
+.footer {
+  
+  border-top: 1px solid #ccc;
+}
