@@ -24,7 +24,7 @@ const navBar = () => {
                             <li class="nav-item">
                                 <Link class="nav-link" to="/contact">Contact</Link>
                             </li>
-                            <button type="button" class="btn btn-outline-primary">login</button>
+                            <button type="button" class="btn btn-outline-primary"><Link to='/signin'>login</Link></button>
                         </ul>
                         
                     </div>
