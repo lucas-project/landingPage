@@ -52,8 +52,7 @@ const Contact = () => {
     return(
         <>
             <NavBar/>        
-            <div style={divStyle_6}>
-                <div className="bg-light" style = {divStyle_5}>
+                <div className="bg-light page-section" >
                     <div className="row" style={divStyle_4}>
                         <div className="col-6">
                             <img src="7.png" alt="..." style={imgStyle_2}/>
@@ -67,14 +66,13 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row" style={divStyle_2}>
-                    
-                    <div className="col">
-                        <div className="masthead-heading text-uppercase">Contact us</div>
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiuod tempor incidiunt.
-                        </div>
-                        <form>
+                <div className="flex vstack page-section">
+                    <div className="flex vstack container">
+                        <h3 className="masthead-heading text-uppercase">Contact us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiuod tempor incidiunt.</p>
+                    </div>
+                    <div className="flex hstack container py-3">
+                        <form className="col-8">
                             <div className="row">
                                 <input type="text" className="form-control" placeholder="Your name" />
                             </div>
@@ -102,18 +100,19 @@ const Contact = () => {
                             <br/>
                             <button type="button" className="btn btn-primary">Submit</button>
                         </form>
+                        <div className="flex vstack container col-4 justify-content-top px-5">
+                            <div><b>Office</b></div>
+                            <div>25 Tree st, Richmond, VIC 3121, Australia</div>
+                            <br/>
+                            <div><b>For Quick Inquires</b></div>
+                        <div>+61 3333330</div>
                     </div>
-                    <div className="col" style={divStyle_3}>
-                        <div><b>Office</b></div>
-                        <div>25 Tree st, Richmond, VIC 3121, Australia</div>
-                        <br/>
-                        <div><b>For Quick Inquires</b></div>
-                        <div>+613333330</div>
                     </div>
+                    
                 </div>
 
                 
-            </div>
+
             <Footer/>
         </>
     )

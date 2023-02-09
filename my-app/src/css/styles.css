@@ -3120,8 +3120,8 @@ textarea.form-control-lg {
 }
 
 .btn-info {
-  color: #fff;
-  background-color: #0dcaf0;
+  color: #0baccc;
+  background-color: #ffffff;
   border-color: #0dcaf0;
 }
 .btn-info:hover {
@@ -11819,17 +11819,13 @@ section#contact form#contactForm :-ms-input-placeholder {
   padding: 6rem;
 }
 
-.sideMargin {
-  margin: 0 2rem;
-}
-.sidePadding {
-  padding: 0 2rem;
-}
-.sideMarginLarge {
-  margin: 0 6rem;
-}
-.expandLogoStyle {
+.inlineLogoStyle-right {
   float: right;
+  height: auto;
+  width: 20px;
+}
+.inlineLogoStyle-left {
+  float: left;
   height: auto;
   width: 20px;
 }

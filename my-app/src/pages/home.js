@@ -88,7 +88,7 @@ const Home = () => {
                         <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.</h3>
                     </div>
                     <div className="row text-center">
-                        <div className="col-md-3 sidePadding">
+                        <div className="col-md-3 px-3">
                             <span className="fa-stack fa-4x">
                             <img src={'1.png'} />
                                 
@@ -96,21 +96,21 @@ const Home = () => {
                             <h4 className="my-3">Improved feedback for students</h4>
                             <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         </div>
-                        <div className="col-md-3 sidePadding">
+                        <div className="col-md-3 px-3">
                             <span className="fa-stack fa-4x">
                             <img src={'2.png'} />
                             </span>
                             <h4 className="my-3">Reduced workload for teachers</h4>
                             <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         </div>
-                        <div className="col-md-3 sidePadding">
+                        <div className="col-md-3 px-3">
                             <span className="fa-stack fa-4x">
                             <img src={'3.png'} />
                             </span>
                             <h4 className="my-3">Data-driven insights</h4>
                             <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                         </div>
-                        <div className="col-md-3 sidePadding">
+                        <div className="col-md-3 px-3">
                             <span className="fa-stack fa-4x">
                             <img src={'4.png'} />
                             </span>
@@ -124,7 +124,7 @@ const Home = () => {
                 <div className="container">
                     <div className="text-center">
                         <h2 className="section-heading text-uppercase">Spreadsheets and post-it notes</h2>
-                        <h3 className="section-subheading text-muted sideMarginLarge">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.</h3>
+                        <h3 className="section-subheading text-muted mx-5">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.</h3>
                     </div>
                     <div className="features-container">
                         <div className="features-list">
@@ -183,9 +183,8 @@ const Home = () => {
                     <div className="text-center">
                         <h2 className="section-heading text-uppercase">FAQ</h2>
                     </div>
-                    
-                    <div className="row sideMarginLarge">
-                        <div className="text-center"><p className="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                    <div className="row mx-5 text-center">
+                        <p className="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
                     </div>
                 </div>
                 <QuestionList questions={questions} />
